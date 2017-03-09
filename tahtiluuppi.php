@@ -8,7 +8,7 @@
         <form action="tahtiluuppi.php" method="post">
             <input type="number" name="maara" required/><br>
             <br>
-            <input type="submit" name="submit" value="Piirrä!"/>
+            <input type="submit" name="submit" value="Let it Go!"/>
         </form>
 
 <?php
