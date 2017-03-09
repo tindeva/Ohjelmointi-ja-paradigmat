@@ -2,6 +2,7 @@
 <header>
 </header>
 <body>
+ <body style="background-color:lightblue;">
  Tähtitulostin! Jee!
       <br>
         <form action="tahtiluuppi.php" method="post">
