@@ -2,12 +2,19 @@
 <body>
 
 <?php
+ 
+ session_start();
+//määritetään istuntomuuttujat
+$_SESSION["nimi"] = $_POST["nimi"];
+$_SESSION["salasana"] = $_POST["salasana"];
+ 
  //Kun nimi kenttä on tyhjä pyydetään kirjoittamaan nimi ja salasana
 if (empty($_POST['nimi']))
  {echo "Kirjoita nimi ja oikea salasana";
  
 ?>
 
+ 
  <br>
  Nimi:
      <br>
@@ -41,11 +48,7 @@ if (empty($_POST['nimi']))
   echo "Tervetuloa ".($_POST['nimi']." !");
 
 }
-session_start();
-//määritetään istuntomuuttujat
-$_SESSION["nimi"] = $_POST["nimi"];
-$_SESSION["salasana"] = $_POST["salasana"];
-  ?>
+ ?>
     
     </body>
    </html>
