@@ -28,14 +28,14 @@ if (empty($_POST['nimi']))
        </form>
 <?php
 //Jos salasanaa ei ole kirjoitettu oiken, pyydetään täyttämään tiedot oikein
-}elseif ($_POST['salasana'] != "1234")
+}elseif ($_POST['salasana'] != "kissa")
   {echo "Väärä salasana";
 ?>
     <br>
      <br>
      Nimi:
          <br>
-           <form action="kirjauduttu_session.php" method="post">
+           <form action="kirjautuminen_session.php" method="post">
              <input type="string" name="nimi" required/><br>
      Salasana (kissa):
              <br>
@@ -46,6 +46,9 @@ if (empty($_POST['nimi']))
  <?php
 } else{
   echo "Tervetuloa ".($_POST['nimi']." !");
+  echo "<br />";
+  echo "<br />";
+  echo '<a href="http://195.148.97.131/~tiinav/okp/kirjauduttu_session.php">Tarkastele tietojasi</a>';
 
 }
  ?>
