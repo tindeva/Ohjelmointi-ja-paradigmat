@@ -1,15 +1,10 @@
-<html>
-<body>
-<?php
- 
-  echo "Tervetuloa ".($_POST['nimi']." !");
-  echo "<br />";
-  echo "<br />";
 
+<?php
 session_start();
-//määritetään istuntomuuttujat
-$_SESSION["nimi"] = $_POST["nimi"];
-$_SESSION["salasana"] = $_POST["salasana"];
+ 
+$nimi = $_SESSION ["nimi"];
+$salasana = $_SESSION ["salasana"];
+
+ echo "Nimi: ".$nimi;
+ echo "<br />".$salasana;
   ?>
-</body>
-</html>
